@@ -46,6 +46,11 @@ ul.plain{padding-left:1.1rem}
 ul.plain li{margin-bottom:.45rem}
 .tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
 .tags li{border:1px solid var(--ink);padding:.2rem .7rem;border-radius:999px;font-size:.9rem}
+
+.hi{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:2.75rem}
+.hi div{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--accent);padding:1rem 1.1rem}
+.hi b{display:block;font:600 1.6rem/1.1 var(--serif)}
+.hi span{color:var(--muted);font-size:.9rem}
 h3{font:500 .95rem var(--sans);color:var(--muted);margin-bottom:.6rem}
 footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);font-size:.9rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -61,8 +66,15 @@ footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);f
     <span>Makassar, Sulawesi Selatan</span>
     <a href="mailto:mutashim22@gmail.com">mutashim22@gmail.com</a>
     <a href="#" rel="noopener">LinkedIn</a>
+    <a href="https://www.instagram.com/mutashimbillah08" rel="noopener">Instagram</a>
   </div>
 </header>
+
+<section class="hi" aria-label="Sorotan">
+  <div><b>Top 2</b><span>Tryout Nasional UTBK 2025, dari 30.000+ peserta</span></div>
+  <div><b>Medali Emas</b><span>OSN-HK 2023 Informatika, predikat A+</span></div>
+  <div><b>Hafiz 30 Juz</b><span>Ma’had Tahfidz As-Sunnah Parapa, 2023</span></div>
+</section>
 
 <section>
   <h2>Tentang saya</h2>
@@ -74,24 +86,42 @@ footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);f
   <ul class="timeline">
     <li><b>Universitas Hasanuddin</b><span>S1 Ilmu Aktuaria (FMIPA), jalur SNBP · 2026 – sekarang</span></li>
     <li><b>MAN Insan Cendekia Gowa</b><span>Jurusan MIPA, fokus Informatika dan Sains · 2023 – 2026</span></li>
+    <li><b>Ma’had Tahfizul Quran “As-Sunnah” Parapa, Gowa</b><span>Tingkat SMP, program tahfiz</span></li>
+    <li><b>Madrasah Tsanawiyah Babussalam Gowa</b><span>Tingkat SMP</span></li>
+    <li><b>UPT SD Negeri 133 Inpres Paririsi</b><span>Sekolah dasar</span></li>
+    <li><b>TK Az Zahrah Takalar</b><span>Yayasan Insan Kamil Alhaalihi</span></li>
   </ul>
 </section>
 
 <section>
-  <h2>Kompetisi dan prestasi</h2>
+  <h2>Prestasi dan kompetisi</h2>
   <div class="table-scroll">
   <table>
     <thead><tr><th>Tahun</th><th>Ajang</th><th>Tingkat</th><th>Keterangan</th></tr></thead>
     <tbody>
-      <tr><td class="yr">2026</td><td>LOMNAS GAMES 2026 (Gebyar Matematika Sains)</td><td>Nasional</td><td>Peserta aktif (Oktober 2026)</td></tr>
+      <tr><td class="yr">2026</td><td>Gebyar Matematika Sains 2026 (HMPS Matematika FMIPA UHO)</td><td>Nasional</td><td>Peserta lomba (11 Maret – 18 Oktober 2026)</td></tr>
+      <tr><td class="yr">2026</td><td>Lomba Matematika Nasional ke-37 (LMNAS 37) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta</td></tr>
       <tr><td class="yr">2026</td><td>Mathematics Event XXIV</td><td>Regional</td><td>Kompetitor matematika dan algoritma</td></tr>
+      <tr class="hl"><td class="yr">2025</td><td>Olimpiade Nasional Sumpah Pemuda (ONSP)</td><td>Nasional</td><td>Medali perak, matematika</td></tr>
+      <tr class="hl"><td class="yr">2025</td><td>The 4th MASCOT, lomba Kalkulus dan Kombinatorika (Universitas Mulawarman)</td><td>Nasional</td><td>Juara 3, medali perunggu (September 2025)</td></tr>
+      <tr><td class="yr">2025</td><td>Calcurics Olympiad mahasiswa, Universitas Andalas</td><td>Nasional</td><td>Peserta</td></tr>
+      <tr><td class="yr">2025</td><td>SMATIK kategori Kalkulus mahasiswa, Universitas Wiralodra</td><td>Nasional</td><td>Peserta</td></tr>
+      <tr><td class="yr">2025</td><td>Genius On Mathematics In Real Application (GEOMETRI) mahasiswa, Universitas Negeri Makassar</td><td>Nasional</td><td>Peserta</td></tr>
       <tr><td class="yr">2025</td><td>Olimpiade Sains Nasional Hari Kemerdekaan (OSNHK)</td><td>Nasional</td><td>Peserta, matematika SMA</td></tr>
-      <tr><td class="yr">2024</td><td>Olimpiade Sains Nasional Tingkat Provinsi (OSN-P)</td><td>Provinsi</td><td>Perwakilan resmi, Informatika</td></tr>
+      <tr class="hl"><td class="yr">2024</td><td>Tryout Nasional UTBK 2025 (Quipper School Premium)</td><td>Nasional</td><td>Peringkat 2 dari 30.000+ peserta (28 Okt – 3 Nov 2024)</td></tr>
+      <tr><td class="yr">2024</td><td>Lomba Matematika Nasional ke-35 (LMNAS 35) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta tingkat SMA (Oktober – November 2024)</td></tr>
+      <tr class="hl"><td class="yr">2024</td><td>Eksebisi Palang Merah Remaja (PMR)</td><td>—</td><td>Juara 1</td></tr>
+      <tr class="hl"><td class="yr">2024</td><td>Olimpiade Sains Nasional Tingkat Provinsi (OSN-P)</td><td>Provinsi</td><td>Perwakilan resmi Informatika, peringkat 3 tingkat kab/kota</td></tr>
       <tr><td class="yr">2024</td><td>Bina Nusantara Programming Contest for High School</td><td>Nasional</td><td>Peserta terdaftar</td></tr>
       <tr class="hl"><td class="yr">2024</td><td>Try Out dan Simulasi OSN-K (Belajar Ambis)</td><td>Nasional</td><td>Peringkat 11 nasional (skor 73)</td></tr>
+      <tr class="hl"><td class="yr">2023</td><td>Sulsel Open Karate Tournament (GOR Sudiang, Makassar)</td><td>Provinsi</td><td>Medali perak (22 – 24 Desember 2023)</td></tr>
+      <tr class="hl"><td class="yr">2023</td><td>Olimpiade Siswa Nasional Hari Kemerdekaan (OSN-HK)</td><td>Nasional</td><td>Medali emas Informatika, predikat A+</td></tr>
       <tr class="hl"><td class="yr">2023</td><td>Kompetisi Sains Pythagoras Nasional (KSPN)</td><td>Nasional</td><td>Medali perunggu</td></tr>
+      <tr class="hl"><td class="yr">2023</td><td>Kompetisi Sains Braindicator (KSB)</td><td>Nasional</td><td>Medali perak, matematika</td></tr>
+      <tr><td class="yr">2023</td><td>Games of Mathematics (GAMMA) UIN Alauddin Makassar</td><td>Nasional</td><td>Peserta</td></tr>
       <tr><td class="yr">2023</td><td>Olimpiade Sains dan Bahasa Nasional (OSBN)</td><td>Nasional</td><td>Kontestan matematika</td></tr>
-      <tr><td class="yr">2023</td><td>Kompetisi Sains Braindicator (KSB)</td><td>Nasional</td><td>Kontestan informatika</td></tr>
+      <tr><td class="yr">2022</td><td>Lomba Matematika Nasional ke-33 (LMNAS 33) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta</td></tr>
+      <tr class="hl"><td class="yr">2019</td><td>Turnamen Catur</td><td>Kabupaten</td><td>Juara 2</td></tr>
     </tbody>
   </table>
   </div>
@@ -119,8 +149,9 @@ footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);f
   <div>
     <h2>Sertifikasi dan karya</h2>
     <ul class="plain">
+      <li>Hafiz Al-Qur’an 30 juz, Ma’had Tahfidz As-Sunnah Parapa (2023).</li>
       <li>EF SET (Standard English Test), selaras dengan standar CEFR.</li>
-      <li>Lulusan Grand Unhas Meeting for Students and Breakthrough (GUMSB) Semester 1, kelas PAI 034.</li>
+      <li>Lulusan Grand Unhas Meeting for Students and Breakthrough (GUMSB).</li>
       <li>Penulis kajian akademik <i>Sejarah dan Prestasi Bulu Tangkis Indonesia</i> (portofolio internal MAN IC Gowa).</li>
     </ul>
   </div>
