@@ -50,6 +50,15 @@ ul.plain li{margin-bottom:.45rem}
 .hi div{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--accent);padding:1rem 1.1rem}
 .hi b{display:block;font:600 1.6rem/1.1 var(--serif)}
 .hi span{color:var(--muted);font-size:.9rem}
+p.lead + p.lead{margin-top:1rem}
+dl.kv{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.25rem;align-content:start}
+dl.kv dt{color:var(--muted);font-size:.9rem;padding-top:.1rem}
+dl.kv dd{margin:0}
+.bars div{display:grid;grid-template-columns:9.5rem 1fr 3rem;align-items:center;gap:.75rem;font-size:.9rem;margin-bottom:.45rem}
+.bars i{display:block;height:8px;background:var(--line);border-radius:4px;position:relative}
+.bars i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--v);background:var(--accent);border-radius:4px}
+.bars b{font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
+blockquote{margin-top:1.5rem;padding-left:1.1rem;border-left:3px solid var(--accent);font:italic 400 1.15rem/1.6 var(--serif);max-width:60ch}
 h3{font:500 .95rem var(--sans);color:var(--muted);margin-bottom:.6rem}
 footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);font-size:.9rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -78,9 +87,38 @@ footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);f
 <section>
   <h2>Tentang saya</h2>
   <p class="lead">Saya adalah mahasiswa Ilmu Aktuaria di Universitas Hasanuddin yang memiliki ketertarikan besar pada matematika, teknologi, dan pemecahan masalah. Saya senang mengeksplorasi hal-hal baru, mulai dari memahami pola di balik persoalan matematis hingga menerapkannya melalui algoritma dan pemrograman.</p>
-
   <p class="lead">Di luar akademik, saya juga aktif dalam berbagai kompetisi dan kegiatan organisasi yang membentuk kemampuan berpikir kritis, kepemimpinan, serta komunikasi. Bagi saya, setiap pengalaman adalah kesempatan untuk terus belajar, berkembang, dan menemukan potensi baru.</p>
 </section>
+
+<section>
+  <h2>Data diri</h2>
+  <div class="cols">
+    <dl class="kv">
+      <dt>Nama</dt><dd>Mutashim Billah Muis</dd>
+      <dt>Lahir</dt><dd>Sompu, 2 Januari 2008</dd>
+      <dt>Umur</dt><dd><span id="umur">18</span> tahun</dd>
+      <dt>Tinggi</dt><dd>172 cm</dd>
+      <dt>Zodiak</dt><dd>Capricorn</dd>
+    </dl>
+    <dl class="kv">
+      <dt>MBTI</dt><dd>INTP, The Logician (Turbulent)</dd>
+      <dt>Enneagram</dt><dd>5w4, The Iconoclast</dd>
+      <dt>Tritype</dt><dd>5w4 – 4w5 – 9w8</dd>
+      <dt>Temperamen</dt><dd>Melankolis-Flegmatis</dd>
+      <dt>Psychosophy</dt><dd>LVEF, The Elitist (1L Extreme)</dd>
+    </dl>
+  </div>
+  <h3 style="margin-top:1.5rem">Big Five</h3>
+  <div class="bars">
+    <div><span>Openness</span><i style="--v:85%"></i><b>85%</b></div>
+    <div><span>Conscientiousness</span><i style="--v:40%"></i><b>40%</b></div>
+    <div><span>Extraversion</span><i style="--v:10%"></i><b>10%</b></div>
+    <div><span>Agreeableness</span><i style="--v:50%"></i><b>50%</b></div>
+    <div><span>Neuroticism</span><i style="--v:75%"></i><b>75%</b></div>
+  </div>
+  <blockquote>Kalem di luar, badai di dalam. Cinta damai tapi idealis, suka hal yang dalam dan estetik, benci drama dan disuruh sat-set. Baterai sosial 2%, suka ngilang tiba-tiba.</blockquote>
+</section>
+
 <section>
   <h2>Pendidikan</h2>
   <ul class="timeline">
@@ -171,5 +209,8 @@ footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);f
 <footer>© 2026 Mutashim Billah Muis</footer>
 
 </div>
+<script>
+(function(){var n=new Date(),a=n.getFullYear()-2008;if(n<new Date(n.getFullYear(),0,2))a--;var e=document.getElementById('umur');if(e)e.textContent=a;})();
+</script>
 </body>
 </html>
