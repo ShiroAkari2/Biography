@@ -3,212 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mutashim Billah Muis</title>
+<title>Mutashim Billah Muis, Mahasiswa Ilmu Aktuaria Universitas Hasanuddin</title>
 <meta name="description" content="Biodata Mutashim Billah Muis, mahasiswa Ilmu Aktuaria Universitas Hasanuddin.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
+<meta name="theme-color" content="#0B1A2B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230B1A2B'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='40' font-weight='700' fill='%23B0E0E6'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
+/* Palet 60/30/10. Putih 60%: halaman baca. Gelap 30%: hero, data diri, footer. Powder blue 10%: angka, bar, baris prestasi. */
 :root{
-  --bg:#EEF1F4; --paper:#FAFBFC; --ink:#16233B; --muted:#5A667A;
-  --line:#CBD3DD; --accent:#B4691F;
+  --ink:#0B1A2B; --paper:#FFFFFF; --mist:#F4F8FA;
+  --blue:#B0E0E6; --tint:#E3F3F6; --deep:#1B5667;
+  --muted:#475569; --soft:#A9B9C9; --line:#D5E0E6;
   --serif:'Newsreader',Georgia,serif; --sans:'IBM Plex Sans',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
-a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px}
-a:hover{color:var(--accent)}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.wrap{max-width:860px;margin:0 auto;padding:clamp(1.5rem,5vw,4rem) 1.25rem}
-header{padding-bottom:2.5rem;border-bottom:2px solid var(--ink);margin-bottom:2.5rem}
-h1{font:600 clamp(2.4rem,8vw,4.6rem)/1.02 var(--serif);letter-spacing:-.02em}
-.role{font:italic 400 1.3rem/1.4 var(--serif);color:var(--muted);margin-top:.75rem}
-.contact{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;margin-top:1.5rem;font-size:.95rem}
-h2{font:600 1.5rem/1.2 var(--serif);margin-bottom:1rem}
-section{margin-bottom:2.75rem}
-p.lead{font:400 1.2rem/1.7 var(--serif);max-width:68ch}
-.table-scroll{overflow-x:auto;background:var(--paper);border:1px solid var(--line)}
-table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:560px}
-th,td{text-align:left;padding:.65rem .9rem;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-weight:500;color:var(--muted);background:var(--bg);font-size:.85rem}
-tr:last-child td{border-bottom:0}
-td.yr{font-variant-numeric:tabular-nums;font-weight:500;color:var(--accent);white-space:nowrap}
-.timeline{list-style:none;padding:0;border-left:2px solid var(--line)}
-.timeline li{padding:0 0 1.25rem 1.25rem;position:relative}
-.timeline li::before{content:"";position:absolute;left:-7px;top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--accent)}
-.timeline b{display:block;font-weight:500}
-.timeline span{color:var(--muted);font-size:.95rem}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
-ul.plain{padding-left:1.1rem}
-ul.plain li{margin-bottom:.45rem}
-.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
-.tags li{border:1px solid var(--ink);padding:.2rem .7rem;border-radius:999px;font-size:.9rem}
+body{background:var(--paper);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a,button,summary{cursor:pointer}
+a{color:inherit;text-decoration-color:var(--deep);text-decoration-thickness:1px;text-underline-offset:4px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--deep);outline-offset:3px;border-radius:2px}
+.dark a:focus-visible{outline-color:var(--blue)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--blue);color:var(--ink);padding:.75rem 1rem;z-index:9}
+.skip:focus{left:0}
+.in{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+.dark{background:var(--ink);color:#fff}
+.dark a{text-decoration-color:var(--blue)}
+.sec{padding:clamp(2.75rem,7vw,5rem) 0}
+.mist{background:var(--mist)}
 
-.hi{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:2.75rem}
-.hi div{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--accent);padding:1rem 1.1rem}
-.hi b{display:block;font:600 1.6rem/1.1 var(--serif)}
-.hi span{color:var(--muted);font-size:.9rem}
-p.lead + p.lead{margin-top:1rem}
-dl.kv{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.25rem;align-content:start}
-dl.kv dt{color:var(--muted);font-size:.9rem;padding-top:.1rem}
-dl.kv dd{margin:0}
-.bars div{display:grid;grid-template-columns:9.5rem 1fr 3rem;align-items:center;gap:.75rem;font-size:.9rem;margin-bottom:.45rem}
-.bars i{display:block;height:8px;background:var(--line);border-radius:4px;position:relative}
-.bars i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--v);background:var(--accent);border-radius:4px}
+/* Hero: satu titik fokus, nama */
+.hero{padding-bottom:clamp(2.5rem,6vw,4.5rem)}
+nav ul{display:flex;flex-wrap:wrap;gap:0 1.5rem;list-style:none;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,.18)}
+nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--soft);text-decoration:none;font-size:.95rem}
+nav a:hover{color:#fff;text-decoration:underline}
+.top{display:grid;gap:2rem;padding-top:clamp(2.5rem,7vw,5rem)}
+h1{font:600 clamp(3rem,11vw,7rem)/.92 var(--serif);letter-spacing:-.03em;text-wrap:balance}
+.role{font:italic 400 clamp(1.15rem,3vw,1.5rem)/1.4 var(--serif);color:var(--blue);margin-top:1.25rem}
+.contact{list-style:none;padding:0;display:grid;gap:.2rem;font-size:.98rem;align-content:end}
+.contact a{display:inline-flex;align-items:center;min-height:44px}
+.contact span{display:inline-flex;align-items:center;min-height:44px;color:var(--soft)}
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:clamp(2.5rem,6vw,4rem);border-top:1px solid rgba(255,255,255,.18)}
+.hl div{padding:1.4rem 1.5rem 0 0}
+.hl b{display:block;font:600 clamp(2rem,5vw,3.2rem)/1 var(--serif);color:var(--blue);font-variant-numeric:lining-nums}
+.hl span{display:block;margin-top:.5rem;color:var(--soft);font-size:.92rem;max-width:26ch}
+
+/* Judul seksi: nomor tabular sebagai motif tabel aktuaria */
+h2{font:600 clamp(1.7rem,4vw,2.3rem)/1.15 var(--serif);letter-spacing:-.01em}
+h2 small{display:block;font:500 .9rem/1 var(--sans);color:var(--deep);font-variant-numeric:tabular-nums;margin-bottom:.6rem;letter-spacing:.02em}
+.dark h2 small{color:var(--blue)}
+h3{font:600 .95rem var(--sans);color:var(--muted);margin-bottom:.7rem}
+.dark h3{color:var(--soft)}
+.split{display:grid;gap:1.5rem}
+.lead{font:400 clamp(1.15rem,2.4vw,1.4rem)/1.7 var(--serif);max-width:62ch}
+.lead + .lead{margin-top:1.1rem}
+
+/* Data diri */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem;margin-top:2rem}
+dl.kv{display:grid;grid-template-columns:max-content 1fr;gap:.6rem 1.5rem;align-content:start}
+dl.kv dt{color:var(--soft);font-size:.92rem}
+dl.kv dd{margin:0;overflow-wrap:anywhere}
+.bars div{display:grid;grid-template-columns:8.5rem 1fr 2.8rem;align-items:center;gap:.75rem;font-size:.9rem;margin-bottom:.6rem}
+.bars i{display:block;height:8px;background:rgba(255,255,255,.16);border-radius:2px;position:relative}
+.bars i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--v);background:var(--blue);border-radius:2px}
 .bars b{font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
-blockquote{margin-top:1.5rem;padding-left:1.1rem;border-left:3px solid var(--accent);font:italic 400 1.15rem/1.6 var(--serif);max-width:60ch}
-h3{font:500 .95rem var(--sans);color:var(--muted);margin-bottom:.6rem}
-footer{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted);font-size:.9rem}
+blockquote{margin-top:2.25rem;font:italic 400 clamp(1.4rem,3.4vw,2.2rem)/1.35 var(--serif);max-width:34ch;text-wrap:balance}
+blockquote::before{content:"\201C";display:block;font:600 4rem/.6 var(--serif);color:var(--blue)}
+
+/* Pendidikan */
+.timeline{list-style:none;padding:0;border-left:2px solid var(--ink)}
+.timeline li{padding:0 0 1.5rem 1.4rem;position:relative}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.5rem;width:12px;height:12px;background:var(--blue);border:2px solid var(--ink);border-radius:50%}
+.timeline b{display:block;font-weight:600}
+.timeline span{color:var(--muted);font-size:.95rem}
+
+/* Prestasi */
+.note{color:var(--muted);font-size:.9rem;margin:.6rem 0 1.5rem}
+.note i{display:inline-block;width:.9rem;height:.9rem;background:var(--tint);border:1px solid var(--deep);vertical-align:-.1rem;margin-right:.35rem}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th{background:var(--tint);text-align:left;font-weight:600;font-size:.88rem;padding:.7rem .9rem}
+td{padding:.8rem .9rem;border-bottom:1px solid var(--line);vertical-align:top}
+td.yr{font-variant-numeric:tabular-nums;font-weight:600;color:var(--deep);white-space:nowrap}
+tr.w td{background:var(--tint)}
+tr.w td:nth-child(4){font-weight:500}
+tr:hover td{background:var(--mist)}
+tr.w:hover td{background:#D3ECF1}
+
+/* Organisasi, sertifikasi, keahlian */
+.orgs{list-style:none;padding:0;border-top:2px solid var(--ink)}
+.orgs li{display:grid;grid-template-columns:2fr 1.2fr 1fr;gap:.25rem 1.5rem;padding:.85rem 0;border-bottom:1px solid var(--line)}
+.orgs b{font-weight:600}
+.orgs span{color:var(--muted)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;margin-top:clamp(2.5rem,6vw,4rem)}
+ul.plain{padding-left:1.1rem}
+ul.plain li{margin-bottom:.55rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin-bottom:1.5rem}
+.tags li{padding:.25rem .7rem;border-radius:4px;font-size:.9rem;border:1px solid var(--ink)}
+.tags.k li{background:var(--ink);color:#fff}
+footer{padding:2rem 0}
+footer .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1.5rem;align-items:center;color:var(--soft);font-size:.9rem}
+footer a{display:inline-flex;align-items:center;min-height:44px}
+
+@media (min-width:860px){
+  .top{grid-template-columns:1.7fr 1fr;align-items:end}
+  .split{grid-template-columns:15rem 1fr;gap:3rem}
+  .split > h2{position:sticky;top:1.5rem;align-self:start}
+}
+@media (max-width:700px){
+  thead{position:absolute;left:-9999px}
+  table,tbody{display:block}
+  tr{display:grid;grid-template-columns:3.2rem 1fr;gap:.1rem .5rem;padding:.85rem .6rem;border-bottom:1px solid var(--line)}
+  td{padding:0;border:0;background:none!important}
+  td.yr{grid-row:span 3}
+  td:nth-child(3){font-size:.85rem;color:var(--muted)}
+  tr.w{background:var(--tint)}
+  .orgs li{grid-template-columns:1fr}
+  .bars div{grid-template-columns:7.6rem 1fr 2.6rem;gap:.5rem}
+}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
+<a class="skip" href="#main">Lewati ke konten</a>
 
-<header>
-  <h1>Mutashim Billah Muis</h1>
-  <p class="role">Mahasiswa Ilmu Aktuaria, Universitas Hasanuddin</p>
-  <div class="contact">
-    <span>Makassar, Sulawesi Selatan</span>
-    <a href="mailto:mutashim22@gmail.com">mutashim22@gmail.com</a>
-    <a href="#" rel="noopener">LinkedIn</a>
-    <a href="https://www.instagram.com/mutashimbillah08" rel="noopener">Instagram</a>
+<header class="dark hero" id="top">
+  <div class="in">
+    <nav aria-label="Navigasi halaman">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#data">Data diri</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#prestasi">Prestasi</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+      </ul>
+    </nav>
+    <div class="top">
+      <div>
+        <h1>Mutashim Billah Muis</h1>
+        <p class="role">Mahasiswa Ilmu Aktuaria, Universitas Hasanuddin</p>
+      </div>
+      <ul class="contact">
+        <li><span>Makassar, Sulawesi Selatan</span></li>
+        <li><a href="mailto:mutashim22@gmail.com">mutashim22@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/mutashimbillah08" rel="noopener">Instagram @mutashimbillah08</a></li>
+      </ul>
+    </div>
+    <div class="hl" role="list" aria-label="Sorotan">
+      <div role="listitem"><b>Top 2</b><span>Tryout Nasional UTBK 2025, dari 30.000+ peserta</span></div>
+      <div role="listitem"><b>Medali Emas</b><span>OSN-HK 2023 Informatika, predikat A+</span></div>
+      <div role="listitem"><b>Hafiz 30 Juz</b><span>Ma’had Tahfidz As-Sunnah Parapa, 2023</span></div>
+    </div>
   </div>
 </header>
 
-<section class="hi" aria-label="Sorotan">
-  <div><b>Top 2</b><span>Tryout Nasional UTBK 2025, dari 30.000+ peserta</span></div>
-  <div><b>Medali Emas</b><span>OSN-HK 2023 Informatika, predikat A+</span></div>
-  <div><b>Hafiz 30 Juz</b><span>Ma’had Tahfidz As-Sunnah Parapa, 2023</span></div>
-</section>
+<main id="main">
 
-<section>
-  <h2>Tentang saya</h2>
-  <p class="lead">Saya adalah mahasiswa Ilmu Aktuaria di Universitas Hasanuddin yang memiliki ketertarikan besar pada matematika, teknologi, dan pemecahan masalah. Saya senang mengeksplorasi hal-hal baru, mulai dari memahami pola di balik persoalan matematis hingga menerapkannya melalui algoritma dan pemrograman.</p>
-  <p class="lead">Di luar akademik, saya juga aktif dalam berbagai kompetisi dan kegiatan organisasi yang membentuk kemampuan berpikir kritis, kepemimpinan, serta komunikasi. Bagi saya, setiap pengalaman adalah kesempatan untuk terus belajar, berkembang, dan menemukan potensi baru.</p>
-</section>
-
-<section>
-  <h2>Data diri</h2>
-  <div class="cols">
-    <dl class="kv">
-      <dt>Nama</dt><dd>Mutashim Billah Muis</dd>
-      <dt>Lahir</dt><dd>Sompu, 2 Januari 2008</dd>
-      <dt>Umur</dt><dd><span id="umur">18</span> tahun</dd>
-      <dt>Tinggi</dt><dd>172 cm</dd>
-      <dt>Zodiak</dt><dd>Capricorn</dd>
-    </dl>
-    <dl class="kv">
-      <dt>MBTI</dt><dd>INTP, The Logician (Turbulent)</dd>
-      <dt>Enneagram</dt><dd>5w4, The Iconoclast</dd>
-      <dt>Tritype</dt><dd>5w4 – 4w5 – 9w8</dd>
-      <dt>Temperamen</dt><dd>Melankolis-Flegmatis</dd>
-      <dt>Psychosophy</dt><dd>LVEF, The Elitist (1L Extreme)</dd>
-    </dl>
-  </div>
-  <h3 style="margin-top:1.5rem">Big Five</h3>
-  <div class="bars">
-    <div><span>Openness</span><i style="--v:85%"></i><b>85%</b></div>
-    <div><span>Conscientiousness</span><i style="--v:40%"></i><b>40%</b></div>
-    <div><span>Extraversion</span><i style="--v:10%"></i><b>10%</b></div>
-    <div><span>Agreeableness</span><i style="--v:50%"></i><b>50%</b></div>
-    <div><span>Neuroticism</span><i style="--v:75%"></i><b>75%</b></div>
-  </div>
-  <blockquote>Kalem di luar, badai di dalam. Cinta damai tapi idealis, suka hal yang dalam dan estetik, benci drama dan disuruh sat-set. Baterai sosial 2%, suka ngilang tiba-tiba.</blockquote>
-</section>
-
-<section>
-  <h2>Pendidikan</h2>
-  <ul class="timeline">
-    <li><b>Universitas Hasanuddin</b><span>S1 Ilmu Aktuaria (FMIPA), jalur SNBP · 2026 – sekarang</span></li>
-    <li><b>MAN Insan Cendekia Gowa</b><span>Jurusan MIPA, fokus Informatika dan Sains · 2023 – 2026</span></li>
-    <li><b>Ma’had Tahfizul Quran “As-Sunnah” Parapa, Gowa</b><span>Tingkat SMP, program tahfiz</span></li>
-    <li><b>Madrasah Tsanawiyah Babussalam Gowa</b><span>Tingkat SMP</span></li>
-    <li><b>UPT SD Negeri 133 Inpres Paririsi</b><span>Sekolah dasar</span></li>
-    <li><b>TK Az Zahrah Takalar</b><span>Yayasan Insan Kamil Alhaalihi</span></li>
-  </ul>
-</section>
-
-<section>
-  <h2>Prestasi dan kompetisi</h2>
-  <div class="table-scroll">
-  <table>
-    <thead><tr><th>Tahun</th><th>Ajang</th><th>Tingkat</th><th>Keterangan</th></tr></thead>
-    <tbody>
-      <tr><td class="yr">2026</td><td>Gebyar Matematika Sains 2026 (HMPS Matematika FMIPA UHO)</td><td>Nasional</td><td>Peserta lomba (11 Maret – 18 Oktober 2026)</td></tr>
-      <tr><td class="yr">2026</td><td>Lomba Matematika Nasional ke-37 (LMNAS 37) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta</td></tr>
-      <tr><td class="yr">2026</td><td>Mathematics Event XXIV</td><td>Regional</td><td>Kompetitor matematika dan algoritma</td></tr>
-      <tr><td class="yr">2025</td><td>Olimpiade Nasional Sumpah Pemuda (ONSP)</td><td>Nasional</td><td>Medali perak, matematika</td></tr>
-      <tr><td class="yr">2025</td><td>The 4th MASCOT, lomba Kalkulus dan Kombinatorika (Universitas Mulawarman)</td><td>Nasional</td><td>Juara 3, medali perunggu (September 2025)</td></tr>
-      <tr><td class="yr">2025</td><td>Calcurics Olympiad mahasiswa, Universitas Andalas</td><td>Nasional</td><td>Peserta</td></tr>
-      <tr><td class="yr">2025</td><td>SMATIK kategori Kalkulus mahasiswa, Universitas Wiralodra</td><td>Nasional</td><td>Peserta</td></tr>
-      <tr><td class="yr">2025</td><td>Genius On Mathematics In Real Application (GEOMETRI) mahasiswa, Universitas Negeri Makassar</td><td>Nasional</td><td>Peserta</td></tr>
-      <tr><td class="yr">2025</td><td>Olimpiade Sains Nasional Hari Kemerdekaan (OSNHK)</td><td>Nasional</td><td>Peserta, matematika SMA</td></tr>
-      <tr><td class="yr">2024</td><td>Tryout Nasional UTBK 2025 (Quipper School Premium)</td><td>Nasional</td><td>Peringkat 2 dari 30.000+ peserta (28 Okt – 3 Nov 2024)</td></tr>
-      <tr><td class="yr">2024</td><td>Lomba Matematika Nasional ke-35 (LMNAS 35) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta tingkat SMA (Oktober – November 2024)</td></tr>
-      <tr><td class="yr">2024</td><td>Eksebisi Palang Merah Remaja (PMR)</td><td>—</td><td>Juara 1</td></tr>
-      <tr><td class="yr">2024</td><td>Olimpiade Sains Nasional Tingkat Provinsi (OSN-P)</td><td>Provinsi</td><td>Perwakilan resmi Informatika, peringkat 3 tingkat kab/kota</td></tr>
-      <tr><td class="yr">2024</td><td>Bina Nusantara Programming Contest for High School</td><td>Nasional</td><td>Peserta terdaftar</td></tr>
-      <tr><td class="yr">2024</td><td>Try Out dan Simulasi OSN-K (Belajar Ambis)</td><td>Nasional</td><td>Peringkat 11 nasional (skor 73)</td></tr>
-      <tr><td class="yr">2023</td><td>Sulsel Open Karate Tournament (GOR Sudiang, Makassar)</td><td>Provinsi</td><td>Medali perak (22 – 24 Desember 2023)</td></tr>
-      <tr><td class="yr">2023</td><td>Olimpiade Siswa Nasional Hari Kemerdekaan (OSN-HK)</td><td>Nasional</td><td>Medali emas Informatika, predikat A+</td></tr>
-      <tr><td class="yr">2023</td><td>Kompetisi Sains Pythagoras Nasional (KSPN)</td><td>Nasional</td><td>Medali perunggu</td></tr>
-      <tr><td class="yr">2023</td><td>Kompetisi Sains Braindicator (KSB)</td><td>Nasional</td><td>Medali perak, matematika</td></tr>
-      <tr><td class="yr">2023</td><td>Games of Mathematics (GAMMA) UIN Alauddin Makassar</td><td>Nasional</td><td>Peserta</td></tr>
-      <tr><td class="yr">2023</td><td>Olimpiade Sains dan Bahasa Nasional (OSBN)</td><td>Nasional</td><td>Kontestan matematika</td></tr>
-      <tr><td class="yr">2022</td><td>Lomba Matematika Nasional ke-33 (LMNAS 33) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta</td></tr>
-      <tr><td class="yr">2019</td><td>Turnamen Catur</td><td>Kabupaten</td><td>Juara 2</td></tr>
-    </tbody>
-  </table>
+<section class="sec" id="tentang">
+  <div class="in split">
+    <h2><small>01</small>Tentang saya</h2>
+    <div>
+      <p class="lead">Saya adalah mahasiswa Ilmu Aktuaria di Universitas Hasanuddin yang memiliki ketertarikan besar pada matematika, teknologi, dan pemecahan masalah. Saya senang mengeksplorasi hal-hal baru, mulai dari memahami pola di balik persoalan matematis hingga menerapkannya melalui algoritma dan pemrograman.</p>
+      <p class="lead">Di luar akademik, saya juga aktif dalam berbagai kompetisi dan kegiatan organisasi yang membentuk kemampuan berpikir kritis, kepemimpinan, serta komunikasi. Bagi saya, setiap pengalaman adalah kesempatan untuk terus belajar, berkembang, dan menemukan potensi baru.</p>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Organisasi dan ekstrakurikuler</h2>
-  <div class="table-scroll">
-  <table>
-    <thead><tr><th>Organisasi</th><th>Peran</th><th>Lingkup</th></tr></thead>
-    <tbody>
-      <tr><td>Pusat Konsultasi Matematika (Pusmatika)</td><td>Anggota / konsultan</td><td>Universitas Hasanuddin</td></tr>
-      <tr><td>Physics Consultation Center</td><td>Anggota / konsultan</td><td>Universitas Hasanuddin</td></tr>
-      <tr><td>Humas OSIS MAN IC Gowa</td><td>Anggota divisi</td><td>Sekolah</td></tr>
-      <tr><td>Disma (Dewan Islah Musyrif/ah)</td><td>Pengurus</td><td>Asrama sekolah</td></tr>
-      <tr><td>Palang Merah Remaja (PMR)</td><td>Anggota aktif</td><td>Sekolah</td></tr>
-      <tr><td>Panahan</td><td>Anggota / atlet</td><td>Minat dan bakat</td></tr>
-      <tr><td>Karate</td><td>Anggota</td><td>Fisik dan kedisiplinan</td></tr>
-    </tbody>
-  </table>
+<section class="sec dark" id="data">
+  <div class="in">
+    <h2><small>02</small>Data diri</h2>
+    <div class="cols">
+      <div>
+        <dl class="kv">
+          <dt>Nama</dt><dd>Mutashim Billah Muis</dd>
+          <dt>Lahir</dt><dd>Sompu, 2 Januari 2008</dd>
+          <dt>Umur</dt><dd><span id="umur">18</span> tahun</dd>
+          <dt>Tinggi</dt><dd>172 cm</dd>
+          <dt>Zodiak</dt><dd>Capricorn</dd>
+          <dt>MBTI</dt><dd>INTP, The Logician (Turbulent)</dd>
+          <dt>Enneagram</dt><dd>5w4, The Iconoclast</dd>
+          <dt>Tritype</dt><dd>5w4 – 4w5 – 9w8</dd>
+          <dt>Temperamen</dt><dd>Melankolis-Flegmatis</dd>
+          <dt>Psychosophy</dt><dd>LVEF, The Elitist (1L Extreme)</dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Big Five</h3>
+        <div class="bars">
+          <div><span>Openness</span><i style="--v:85%" aria-hidden="true"></i><b>85%</b></div>
+          <div><span>Conscientiousness</span><i style="--v:40%" aria-hidden="true"></i><b>40%</b></div>
+          <div><span>Extraversion</span><i style="--v:10%" aria-hidden="true"></i><b>10%</b></div>
+          <div><span>Agreeableness</span><i style="--v:50%" aria-hidden="true"></i><b>50%</b></div>
+          <div><span>Neuroticism</span><i style="--v:75%" aria-hidden="true"></i><b>75%</b></div>
+        </div>
+        <blockquote>Kalem di luar, badai di dalam. Cinta damai tapi idealis, suka hal yang dalam dan estetik, benci drama dan disuruh sat-set. Baterai sosial 2%, suka ngilang tiba-tiba.</blockquote>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="cols">
-  <div>
-    <h2>Sertifikasi dan karya</h2>
-    <ul class="plain">
-      <li>Hafiz Al-Qur’an 30 juz, Ma’had Tahfidz As-Sunnah Parapa (2023).</li>
-      <li>EF SET (Standard English Test), selaras dengan standar CEFR.</li>
-      <li>Lulusan Grand Unhas Meeting for Students and Breakthrough (GUMSB).</li>
-      <li>Penulis kajian akademik <i>Sejarah dan Prestasi Bulu Tangkis Indonesia</i> (portofolio internal MAN IC Gowa).</li>
-    </ul>
-  </div>
-  <div>
-    <h2>Keahlian</h2>
-    <h3>Teknis</h3>
-    <ul class="tags">
-      <li>Sains aktuaria</li><li>Algoritma</li><li>Pemrograman kompetitif</li><li>Analisis data matematika</li><li>Manajemen risiko dasar</li>
-    </ul>
-    <h3 style="margin-top:1rem">Non-teknis dan bahasa</h3>
-    <ul class="tags">
-      <li>Kepemimpinan</li><li>Komunikasi publik</li><li>Pertolongan pertama (PMR)</li><li>Indonesia (native)</li><li>Inggris</li>
+<section class="sec" id="pendidikan">
+  <div class="in split">
+    <h2><small>03</small>Pendidikan</h2>
+    <ul class="timeline">
+      <li><b>Universitas Hasanuddin</b><span>S1 Ilmu Aktuaria (FMIPA), jalur SNBP · 2026 – sekarang</span></li>
+      <li><b>MAN Insan Cendekia Gowa</b><span>Jurusan MIPA, fokus Informatika dan Sains · 2023 – 2026</span></li>
+      <li><b>Ma’had Tahfizul Quran “As-Sunnah” Parapa, Gowa</b><span>Tingkat SMP, program tahfiz</span></li>
+      <li><b>Madrasah Tsanawiyah Babussalam Gowa</b><span>Tingkat SMP</span></li>
+      <li><b>UPT SD Negeri 133 Inpres Paririsi</b><span>Sekolah dasar</span></li>
+      <li><b>TK Az Zahrah Takalar</b><span>Yayasan Insan Kamil Alhaalihi</span></li>
     </ul>
   </div>
 </section>
 
-<footer>© 2026 Mutashim Billah Muis</footer>
+<section class="sec mist" id="prestasi">
+  <div class="in">
+    <h2><small>04</small>Prestasi dan kompetisi</h2>
+    <p class="note"><i></i>Baris berlatar biru muda: meraih medali atau peringkat.</p>
+    <table>
+      <thead><tr><th scope="col">Tahun</th><th scope="col">Ajang</th><th scope="col">Tingkat</th><th scope="col">Keterangan</th></tr></thead>
+      <tbody>
+        <tr><td class="yr">2026</td><td>Gebyar Matematika Sains 2026 (HMPS Matematika FMIPA UHO)</td><td>Nasional</td><td>Peserta lomba (11 Maret – 18 Oktober 2026)</td></tr>
+        <tr><td class="yr">2026</td><td>Lomba Matematika Nasional ke-37 (LMNAS 37) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta</td></tr>
+        <tr><td class="yr">2026</td><td>Mathematics Event XXIV</td><td>Regional</td><td>Kompetitor matematika dan algoritma</td></tr>
+        <tr class="w"><td class="yr">2025</td><td>Olimpiade Nasional Sumpah Pemuda (ONSP)</td><td>Nasional</td><td>Medali perak, matematika</td></tr>
+        <tr class="w"><td class="yr">2025</td><td>The 4th MASCOT, lomba Kalkulus dan Kombinatorika (Universitas Mulawarman)</td><td>Nasional</td><td>Juara 3, medali perunggu (September 2025)</td></tr>
+        <tr><td class="yr">2025</td><td>Calcurics Olympiad mahasiswa, Universitas Andalas</td><td>Nasional</td><td>Peserta</td></tr>
+        <tr><td class="yr">2025</td><td>SMATIK kategori Kalkulus mahasiswa, Universitas Wiralodra</td><td>Nasional</td><td>Peserta</td></tr>
+        <tr><td class="yr">2025</td><td>Genius On Mathematics In Real Application (GEOMETRI) mahasiswa, Universitas Negeri Makassar</td><td>Nasional</td><td>Peserta</td></tr>
+        <tr><td class="yr">2025</td><td>Olimpiade Sains Nasional Hari Kemerdekaan (OSNHK)</td><td>Nasional</td><td>Peserta, matematika SMA</td></tr>
+        <tr class="w"><td class="yr">2024</td><td>Tryout Nasional UTBK 2025 (Quipper School Premium)</td><td>Nasional</td><td>Peringkat 2 dari 30.000+ peserta (28 Okt – 3 Nov 2024)</td></tr>
+        <tr><td class="yr">2024</td><td>Lomba Matematika Nasional ke-35 (LMNAS 35) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta tingkat SMA (Oktober – November 2024)</td></tr>
+        <tr class="w"><td class="yr">2024</td><td>Eksebisi Palang Merah Remaja (PMR)</td><td>Tidak dicantumkan</td><td>Juara 1</td></tr>
+        <tr><td class="yr">2024</td><td>Olimpiade Sains Nasional Tingkat Provinsi (OSN-P)</td><td>Provinsi</td><td>Perwakilan resmi Informatika, peringkat 3 tingkat kab/kota</td></tr>
+        <tr><td class="yr">2024</td><td>Bina Nusantara Programming Contest for High School</td><td>Nasional</td><td>Peserta terdaftar</td></tr>
+        <tr><td class="yr">2024</td><td>Try Out dan Simulasi OSN-K (Belajar Ambis)</td><td>Nasional</td><td>Peringkat 11 nasional (skor 73)</td></tr>
+        <tr class="w"><td class="yr">2023</td><td>Sulsel Open Karate Tournament (GOR Sudiang, Makassar)</td><td>Provinsi</td><td>Medali perak (22 – 24 Desember 2023)</td></tr>
+        <tr class="w"><td class="yr">2023</td><td>Olimpiade Siswa Nasional Hari Kemerdekaan (OSN-HK)</td><td>Nasional</td><td>Medali emas Informatika, predikat A+</td></tr>
+        <tr class="w"><td class="yr">2023</td><td>Kompetisi Sains Pythagoras Nasional (KSPN)</td><td>Nasional</td><td>Medali perunggu</td></tr>
+        <tr class="w"><td class="yr">2023</td><td>Kompetisi Sains Braindicator (KSB)</td><td>Nasional</td><td>Medali perak, matematika</td></tr>
+        <tr><td class="yr">2023</td><td>Games of Mathematics (GAMMA) UIN Alauddin Makassar</td><td>Nasional</td><td>Peserta</td></tr>
+        <tr><td class="yr">2023</td><td>Olimpiade Sains dan Bahasa Nasional (OSBN)</td><td>Nasional</td><td>Kontestan matematika</td></tr>
+        <tr><td class="yr">2022</td><td>Lomba Matematika Nasional ke-33 (LMNAS 33) Universitas Gadjah Mada</td><td>Nasional</td><td>Peserta</td></tr>
+        <tr class="w"><td class="yr">2019</td><td>Turnamen Catur</td><td>Kabupaten</td><td>Juara 2</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
-</div>
+<section class="sec" id="organisasi">
+  <div class="in">
+    <h2><small>05</small>Organisasi dan ekstrakurikuler</h2>
+    <ul class="orgs" style="margin-top:1.75rem">
+      <li><b>Pusat Konsultasi Matematika (Pusmatika)</b><span>Anggota / konsultan</span><span>Universitas Hasanuddin</span></li>
+      <li><b>Physics Consultation Center</b><span>Anggota / konsultan</span><span>Universitas Hasanuddin</span></li>
+      <li><b>Humas OSIS MAN IC Gowa</b><span>Anggota divisi</span><span>Sekolah</span></li>
+      <li><b>Disma (Dewan Islah Musyrif/ah)</b><span>Pengurus</span><span>Asrama sekolah</span></li>
+      <li><b>Palang Merah Remaja (PMR)</b><span>Anggota aktif</span><span>Sekolah</span></li>
+      <li><b>Panahan</b><span>Anggota / atlet</span><span>Minat dan bakat</span></li>
+      <li><b>Karate</b><span>Anggota</span><span>Fisik dan kedisiplinan</span></li>
+    </ul>
+
+    <div class="two" id="keahlian">
+      <div>
+        <h2 style="font-size:1.5rem"><small>06</small>Sertifikasi dan karya</h2>
+        <ul class="plain" style="margin-top:1.25rem">
+          <li>Hafiz Al-Qur’an 30 juz, Ma’had Tahfidz As-Sunnah Parapa (2023).</li>
+          <li>EF SET (Standard English Test), selaras dengan standar CEFR.</li>
+          <li>Lulusan Grand Unhas Meeting for Students and Breakthrough (GUMSB).</li>
+          <li>Penulis kajian akademik <i>Sejarah dan Prestasi Bulu Tangkis Indonesia</i> (portofolio internal MAN IC Gowa).</li>
+        </ul>
+      </div>
+      <div>
+        <h2 style="font-size:1.5rem"><small>07</small>Keahlian</h2>
+        <h3 style="margin-top:1.25rem">Teknis</h3>
+        <ul class="tags k">
+          <li>Sains aktuaria</li><li>Algoritma</li><li>Pemrograman kompetitif</li><li>Analisis data matematika</li><li>Manajemen risiko dasar</li>
+        </ul>
+        <h3>Non-teknis dan bahasa</h3>
+        <ul class="tags">
+          <li>Kepemimpinan</li><li>Komunikasi publik</li><li>Pertolongan pertama (PMR)</li><li>Indonesia (native)</li><li>Inggris</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="dark">
+  <div class="in">
+    <span>© 2026 Mutashim Billah Muis</span>
+    <a href="#top">Kembali ke atas</a>
+  </div>
+</footer>
+
 <script>
 (function(){var n=new Date(),a=n.getFullYear()-2008;if(n<new Date(n.getFullYear(),0,2))a--;var e=document.getElementById('umur');if(e)e.textContent=a;})();
 </script>
